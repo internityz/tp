@@ -30,8 +30,9 @@ public class PersonBuilder {
     private Remark remark;
     private Set<Tag> tags;
 
+
     /**
-     * Constructs a person
+     * Initializes the PersonBuilder with the data
      */
     public PersonBuilder() {
         name = new Name(DEFAULT_NAME);
