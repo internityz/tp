@@ -41,7 +41,7 @@ public class DetailCommand extends Command {
         }
 
         Person personToDisplay = lastShownList.get(index.getZeroBased());
-
+        assert personToDisplay != null;
         model.setSelectedPerson(personToDisplay);
 
         return new CommandResult(String.format(MESSAGE_DISPLAY_PERSON_SUCCESS, personToDisplay));
